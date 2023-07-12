@@ -48,7 +48,6 @@
     /* benefits */
     .background2 {
         padding: 85px 0px;
-        background: #00000014;
     }
 
     .title2 {
@@ -78,11 +77,13 @@
     }
 
     .bx2 {
-        width: 420px;
+        width: 339px;
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 12px;
+        height: 260px;
+        justify-content: start;
+        gap: 18px;
     }
 
     .bx2 p {
@@ -97,6 +98,8 @@
 
     .bx2 h3 {
         font-weight: 600;
+        text-align: center;
+        font-size: 22px;
     }
 
     .iconborder {
@@ -108,26 +111,40 @@
         text-align: center;
     }
 
+    .answer ol {
+        color: white;
+        font-size: 18px;
+    }
 
     /* section3 */
     .background-3 {
         padding: 90px 0px;
-        background: #007c9d;
+        color: white;
+        background: #007c9db5;
+    }
+
+    .background-3.colorback {
+        color: black;
+        background: #ffffff;
     }
 
     .bgx3 {
-        color: white;
         width: 556px;
         max-width: 100%;
     }
 
     .bgx3 h2 {
-        font-size: 53px;
+        font-size: 46px;
+        color: #66a5ad;
     }
 
     .sec3 img {
         width: 600px;
         max-width: 100%;
+    }
+
+    .bgx3.colorblue h2 {
+        color: white;
     }
 
     .sec3 {
@@ -149,7 +166,7 @@
 
     .backfaq {
         padding: 70px 0px;
-        background: black;
+        background: #66A5AD;
     }
 
     .faq-section {
@@ -158,11 +175,12 @@
     }
 
     .faq {
-        margin-bottom: 60px;
+        margin-bottom: 78px;
     }
 
     .faq h3 {
         color: white;
+        font-size: 20px;
     }
 
     .question {
@@ -191,7 +209,17 @@
 
     .answer p {
         color: white;
-        font-size: 21px;
+        font-size: 18px;
+    }
+
+    .sec3.flexinvert {
+        flex-direction: row-reverse;
+    }
+
+    .answer span {
+        font-weight: bold;
+        font-style: italic;
+        color: white;
     }
 </style>
 
@@ -242,9 +270,12 @@
             <div class='title1'>
                 <h1>Vida Submarina</h1>
                 <div class='line1'></div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore eligendi dolorem fuga architecto
-                    repudiandae. Dolores officia possimus omnis quasi nostrum vero? Quo ab maiores maxime nobis
-                    consequatur! Accusantium, modi pariatur!</p>
+                <p>La vida marina es diversa y fascinante, habitando en océanos, mares y aguas saladas. Desde ballenas y
+                    delfines hasta
+                    plancton y corales, estos ecosistemas albergan una amplia gama de especies cruciales para nuestro
+                    planeta. Proteger y
+                    explorar estos ecosistemas es fundamental para preservar la biodiversidad y asegurar un futuro
+                    sostenible.</p>
             </div>
         </div>
     </div>
@@ -257,39 +288,24 @@
             <div class='bgbox2'>
                 <div class='bx2'>
                     <div class="iconborder">
-                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon src="https://cdn.lordicon.com/hnvrjtda.json" trigger="hover" colors="primary:#00bf62"
-                            style="width:100px;height:100px">
-                        </lord-icon>
+                        <img src="Images/icono.png" alt="">
                     </div>
-                    <h3>Rapido</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda perferendis illum eaque
-                        provident a et voluptatibus porro quasi? Quisquam asperiores pariatur molestiae, exercitationem
-                        atque repellat error nemo? Temporibus, dolorem cum?</p>
+                    <h3>Conservar y proteger los hábitats marinos para preservar la vida marina.</h3>
+
                 </div>
                 <div class='bx2'>
                     <div class="iconborder">
-                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon src="https://cdn.lordicon.com/xryjrepg.json" trigger="hover" colors="primary:#c71f16"
-                            style="width:100px;height:100px">
-                        </lord-icon>
+                        <img src="Images/icono2.png" alt="">
                     </div>
-                    <h3>Seguro</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sapiente totam id iusto
-                        adipisci quidem ratione optio culpa aperiam tempora illo, nulla vitae. Deserunt adipisci
-                        doloribus, laboriosam perferendis error ducimus!</p>
+                    <h3>Regular y reducir la contaminación para salvaguardar la salud de los ecosistemas marinos.</h3>
+
                 </div>
                 <div class='bx2'>
                     <div class='iconborder'>
-                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon src="https://cdn.lordicon.com/jffauosv.json" trigger="hover" colors="primary:#121331"
-                            style="width:100px;height:100px">
-                        </lord-icon>
+                        <img src="Images/icono3.png" alt="">
                     </div>
-                    <h3>Accesibilidad</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim ea minima laboriosam fuga, tempore
-                        recusandae voluptas voluptatum, voluptates provident iusto cupiditate modi! Voluptatem expedita
-                        facere delectus commodi quidem repellat ea!</p>
+                    <h3>Fomentar la pesca sostenible y evitar la sobreexplotación de especies marinas.</h3>
+
                 </div>
             </div>
         </div>
@@ -297,17 +313,33 @@
     <div class="background-3">
         <div class="section-3 container">
             <div class="sec3">
-                <div class="bgx3">
+                <div class="bgx3 colorblue">
                     <h2>Poblacion Meta</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nulla maiores ex maxime
-                        assumenda veniam laboriosam laborum, debitis accusamus voluptate nemo nisi obcaecati sunt fugiat
-                        mollitia id quis a omnis.</p>
+                    <p>La población meta, son todos costarricense y a su vez los turistas que llegan al territorio
+                        nacional
+                        a vacacionar, para la percepción del visitante sea la protección a los recursos naturales y la
+                        protección de
+                        la vida marina</p>
                 </div>
                 <img src="Images/recoger-basura.jpg" alt="">
             </div>
         </div>
     </div>
-
+    <div class="background-3 colorback">
+        <div class="section-3 container">
+            <div class="sec3 flexinvert">
+                <div class="bgx3">
+                    <h2>Objetivo con nuestro proyecto</h2>
+                    <p>La página concientizará a los locales y turistas sobre el valor de la riqueza marina del país,
+                        donde
+                        se pueden mencionar especies en peligro de exƟnción, tales como la tortuga baula. Así mismo
+                        brindará
+                        información del como protegerlo y aportar a la causa en un aspecto global y no solo local.</p>
+                </div>
+                <img src="Images/tortuga.jpg" alt="">
+            </div>
+        </div>
+    </div>
     <div class='backfaq'>
         <div class='container'>
             <div class='faqtitle'>
@@ -315,28 +347,77 @@
             </div>
             <div class="faq-section">
                 <div class="faq">
-                    <h3 class="question">Question 1 <i class="fas fa-chevron-down"></i></h3>
+                    <h3 class="question">SOFTWARE POR DESARROLLAR<i class="fas fa-chevron-down"></i></h3>
                     <div class="answer">
-                        <p>Answer 1</p>
+                        <p>Se desarrollará una página donde será un blog de información en relación con la vida marina
+                            en
+                            el territorio costarricense, para concientizar sobre la importancia de las especies que
+                            cuenta el país en
+                            sus zonas costeras y de que hoy son reservas. El objetivo es llevar la información sobre las
+                            especies en
+                            peligro de extensión que el país, así como los planes con los que los centros de reservas de
+                            especies
+                            platean para proporcionar una mejor vida de la especie.</p>
                     </div>
                 </div>
                 <div class="faq">
-                    <h3 class="question">Question 2 <i class="fas fa-chevron-down"></i></h3>
+                    <h3 class="question">TIEMPO ESTIMADO<i class="fas fa-chevron-down"></i></h3>
                     <div class="answer">
-                        <p>Answer 2</p>
+                        <p>El Ɵempo estimado para desarrollar la página es de aproximadamente 1 mes calendario, donde
+                            se desarrollará una página funcional donde sea interactiva con el usuario, por medio de una
+                            interfaz
+                            gráfica en lenguaje HTML, CSS y JavaScript.</p>
                     </div>
                 </div>
                 <div class="faq">
-                    <h3 class="question">Question 3 <i class="fas fa-chevron-down"></i></h3>
+                    <h3 class="question">COSTO DEL PROYECTO<i class="fas fa-chevron-down"></i></h3>
                     <div class="answer">
-                        <p>Answer 3-1</p>
+                        <p>El costo 60 de dólares la hora, tomando en cuenta el costo del desarrollador, la ganancia de
+                            la
+                            compañía y el cobro al cliente.
+                            <br><br>
+                            Se estima un tiempo aproximado de 1 mes a 20 horas por semana para un total de 80 horas al
+                            mes del desarrollo del proyecto. El costo total asciende a 4,800 USD.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <h3 class="question">DESCRIPCIÓN AMPLIA DEL SOFTWARE ¿Cómo funciona?<i
+                            class="fas fa-chevron-down"></i></h3>
+                    <div class="answer">
+                        <p>La página WEB está desarrollada bajo los lenguajes de programación de HTML, CSS y JavaScript,
+                            donde da como resultado una interfaz gráfica para el usuario, donde tendrá la capacidad de
+                            mostrar
+                            información relevante sobre el tema, almacenará videos referentes al tema de la protección
+                            de la vida
+                            submarina y tendrá una zona de aportes monetarios a campañas de protección a animales
+                            marinos en
+                            peligro de extención.
+                        </p>
+                        <span>El soŌware solo será mostrado en la WEB, no tendrá aplicación móvil.</span>
+                    </div>
+                </div>
+                <div class="faq">
+                    <h3 class="question">DEFINIR LA LABOR DE CADA INGENIERO
+                        <br>
+                        (QUE LABOR VA A REALIZAR CADA MIEMBRO DEL
+                        EQUIPO
+                        SEGÚN EL CICLO DE VIDA DEL SOFTWARE)<i class="fas fa-chevron-down"></i>
+                    </h3>
+                    <div class="answer">
+                        <ol>
+                            <li>Determinación de requerimientos:</li>
+                            <li>Diseño del Software:</li>
+                            <li>Desarrollo del Software:</li>
+                            <li>Pruebas:</li>
+                            <li>Despliegue:</li>
+                            <li>Operaciones</li>
+                        </ol>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const questions = document.querySelectorAll('.question');
